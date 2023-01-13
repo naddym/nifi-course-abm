@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description></description>
+    <groupId>df0140a1-0181-1000-9eae-a1116a1a928d</groupId>
+    <name>Querying-from-MongoDB</name>
+    <snippet>
+        <connections>
+            <id>0223f274-fc1d-3e29-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <bends>
+                <x>248.0</x>
+                <y>296.0</y>
+            </bends>
+            <destination>
+                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
+                <id>0da08c6f-32ef-31a1-0000-000000000000</id>
+                <type>FUNNEL</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>failure</selectedRelationships>
+            <source>
+                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
+                <id>64b29ec5-93f1-3cc4-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>02601c16-5bdd-3f1d-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <bends>
+                <x>2214.666778564453</x>
+                <y>435.87884521484375</y>
+            </bends>
+            <destination>
+                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
+                <id>416eb4e2-0637-3ae6-0000-000000000000</id>
+                <type>FUNNEL</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>failure</selectedRelationships>
+            <source>
+                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
+                <id>c8c9e89e-90a7-37f0-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>4168cf4f-a039-35ea-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
+                <id>c8c9e89e-90a7-37f0-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
+                <id>0f37f245-6f7a-3d1b-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>6a29cb35-bd68-37e3-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
+                <id>416eb4e2-0637-3ae6-0000-000000000000</id>
+                <type>FUNNEL</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
+                <id>c8c9e89e-90a7-37f0-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>84060dfe-0ee3-349d-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
+                <id>0da08c6f-32ef-31a1-0000-000000000000</id>
+                <type>FUNNEL</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
+                <id>64b29ec5-93f1-3cc4-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <funnels>
+            <id>0da08c6f-32ef-31a1-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <position>
+                <x>600.0</x>
+                <y>152.0</y>
+            </position>
+        </funnels>
+        <funnels>
+            <id>416eb4e2-0637-3ae6-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <position>
+                <x>2376.0</x>
+                <y>336.0</y>
+            </position>
+        </funnels>
+        <labels>
+            <id>81811642-2990-37c7-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <position>
+                <x>72.0</x>
+                <y>32.0</y>
+            </position>
+            <height>48.0</height>
+            <label>Get Data from MongoDB</label>
+            <style>
+                <entry>
+                    <key>background-color</key>
+                    <value>#debd38</value>
+                </entry>
+                <entry>
+                    <key>font-size</key>
+                    <value>16px</value>
+                </entry>
+            </style>
+            <width>200.0</width>
+        </labels>
+        <labels>
+            <id>db9331e0-2007-3ceb-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <position>
+                <x>1816.0</x>
+                <y>0.0</y>
+            </position>
+            <height>48.0</height>
+            <label>Update Data into MongoDB</label>
+            <style>
+                <entry>
+                    <key>background-color</key>
+                    <value>#debd38</value>
+                </entry>
+                <entry>
+                    <key>font-size</key>
+                    <value>16px</value>
+                </entry>
+            </style>
+            <width>200.0</width>
+        </labels>
+        <processors>
+            <id>0f37f245-6f7a-3d1b-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <position>
+                <x>1736.0</x>
+                <y>80.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.15.3</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>File Size</key>
+                        <value>
+                            <name>File Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>
+                            <name>Batch Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>
+                            <name>Data Format</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>
+                            <name>Unique FlowFiles</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                        <value>
+                            <name>generate-ff-custom-text</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>
+                            <name>character-set</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>mime-type</key>
+                        <value>
+                            <name>mime-type</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>File Size</key>
+                        <value>0B</value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>1</value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>Text</value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                        <value>{
+$set: { "type" : "small_airport" }
+}</value>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>UTF-8</value>
+                    </entry>
+                    <entry>
+                        <key>mime-type</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GenerateFlowFile</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+        </processors>
+        <processors>
+            <id>64b29ec5-93f1-3cc4-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>112.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-mongodb-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.15.3</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>mongo-client-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.mongodb.MongoDBClientService</identifiesControllerService>
+                            <name>mongo-client-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Mongo URI</key>
+                        <value>
+                            <name>Mongo URI</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Mongo Database Name</key>
+                        <value>
+                            <name>Mongo Database Name</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Mongo Collection Name</key>
+                        <value>
+                            <name>Mongo Collection Name</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>ssl-context-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                            <name>ssl-context-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>ssl-client-auth</key>
+                        <value>
+                            <name>ssl-client-auth</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>json-type</key>
+                        <value>
+                            <name>json-type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>use-pretty-printing</key>
+                        <value>
+                            <name>use-pretty-printing</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>mongo-charset</key>
+                        <value>
+                            <name>mongo-charset</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Query</key>
+                        <value>
+                            <name>Query</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>mongo-query-attribute</key>
+                        <value>
+                            <name>mongo-query-attribute</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Projection</key>
+                        <value>
+                            <name>Projection</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Sort</key>
+                        <value>
+                            <name>Sort</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Limit</key>
+                        <value>
+                            <name>Limit</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>
+                            <name>Batch Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>results-per-flowfile</key>
+                        <value>
+                            <name>results-per-flowfile</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>mongo-date-format</key>
+                        <value>
+                            <name>mongo-date-format</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>get-mongo-send-empty</key>
+                        <value>
+                            <name>get-mongo-send-empty</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>mongo-client-service</key>
+                    </entry>
+                    <entry>
+                        <key>Mongo URI</key>
+                        <value>mongodb://nifi:password@ec2-34-234-88-176.compute-1.amazonaws.com:27017</value>
+                    </entry>
+                    <entry>
+                        <key>Mongo Database Name</key>
+                        <value>test</value>
+                    </entry>
+                    <entry>
+                        <key>Mongo Collection Name</key>
+                        <value>nifi</value>
+                    </entry>
+                    <entry>
+                        <key>ssl-context-service</key>
+                    </entry>
+                    <entry>
+                        <key>ssl-client-auth</key>
+                        <value>REQUIRED</value>
+                    </entry>
+                    <entry>
+                        <key>json-type</key>
+                        <value>Extended</value>
+                    </entry>
+                    <entry>
+                        <key>use-pretty-printing</key>
+                        <value>true</value>
+                    </entry>
+                    <entry>
+                        <key>mongo-charset</key>
+                        <value>UTF-8</value>
+                    </entry>
+                    <entry>
+                        <key>Query</key>
+                        <value>{ "id" : 6522 }</value>
+                    </entry>
+                    <entry>
+                        <key>mongo-query-attribute</key>
+                    </entry>
+                    <entry>
+                        <key>Projection</key>
+                    </entry>
+                    <entry>
+                        <key>Sort</key>
+                    </entry>
+                    <entry>
+                        <key>Limit</key>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                    </entry>
+                    <entry>
+                        <key>results-per-flowfile</key>
+                    </entry>
+                    <entry>
+                        <key>mongo-date-format</key>
+                        <value>yyyy-MM-dd'T'HH:mm:ss'Z'</value>
+                    </entry>
+                    <entry>
+                        <key>get-mongo-send-empty</key>
+                        <value>false</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GetMongo</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>original</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.mongodb.GetMongo</type>
+        </processors>
+        <processors>
+            <id>c8c9e89e-90a7-37f0-0000-000000000000</id>
+            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <position>
+                <x>1736.0</x>
+                <y>296.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-mongodb-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.15.3</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>mongo-client-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.mongodb.MongoDBClientService</identifiesControllerService>
+                            <name>mongo-client-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Mongo URI</key>
+                        <value>
+                            <name>Mongo URI</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Mongo Database Name</key>
+                        <value>
+                            <name>Mongo Database Name</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Mongo Collection Name</key>
+                        <value>
+                            <name>Mongo Collection Name</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>ssl-context-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+                            <name>ssl-context-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>ssl-client-auth</key>
+                        <value>
+                            <name>ssl-client-auth</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Mode</key>
+                        <value>
+                            <name>Mode</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Upsert</key>
+                        <value>
+                            <name>Upsert</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Update Query Key</key>
+                        <value>
+                            <name>Update Query Key</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>putmongo-update-query</key>
+                        <value>
+                            <name>putmongo-update-query</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>put-mongo-update-mode</key>
+                        <value>
+                            <name>put-mongo-update-mode</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Write Concern</key>
+                        <value>
+                            <name>Write Concern</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Character Set</key>
+                        <value>
+                            <name>Character Set</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>mongo-client-service</key>
+                    </entry>
+                    <entry>
+                        <key>Mongo URI</key>
+                        <value>mongodb://nifi:password@ec2-34-234-88-176.compute-1.amazonaws.com:27017</value>
+                    </entry>
+                    <entry>
+                        <key>Mongo Database Name</key>
+                        <value>test</value>
+                    </entry>
+                    <entry>
+                        <key>Mongo Collection Name</key>
+                        <value>nifi</value>
+                    </entry>
+                    <entry>
+                        <key>ssl-context-service</key>
+                    </entry>
+                    <entry>
+                        <key>ssl-client-auth</key>
+                        <value>REQUIRED</value>
+                    </entry>
+                    <entry>
+                        <key>Mode</key>
+                        <value>update</value>
+                    </entry>
+                    <entry>
+                        <key>Upsert</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Update Query Key</key>
+                    </entry>
+                    <entry>
+                        <key>putmongo-update-query</key>
+                        <value>{ "id" : 6522 }</value>
+                    </entry>
+                    <entry>
+                        <key>put-mongo-update-mode</key>
+                        <value>operators</value>
+                    </entry>
+                    <entry>
+                        <key>Write Concern</key>
+                        <value>ACKNOWLEDGED</value>
+                    </entry>
+                    <entry>
+                        <key>Character Set</key>
+                        <value>UTF-8</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>PutMongo</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>RUNNING</state>
+            <style/>
+            <type>org.apache.nifi.processors.mongodb.PutMongo</type>
+        </processors>
+    </snippet>
+    <timestamp>10/03/2022 16:18:54 IST</timestamp>
+</template>

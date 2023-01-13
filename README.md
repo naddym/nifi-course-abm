@@ -11,6 +11,7 @@ A Repository to host nifi course material.
 
 ## A typical layout of this course
 
+    ├── extensions                          # guide for building custom functionality in nifi
     ├── installation                        # guide for installating nifi standalone/cluster for both secure/insecure mode
         ├── docker                          # demonstration of docker based installation
             ├── cluster                     # 2 node cluster setup (secure/insecure)
@@ -21,7 +22,6 @@ A Repository to host nifi course material.
             └── standalone
     ├── monitoring                          # nifi monitoring with prometheus and grafana
     ├── presentation-slides                 # slides used during course (copyright reserved, distribution in public is restrictly prohibited)
-    ├── productionizing                     # nifi in production architecture
     ├── templates                           # nifi templates which contains all nifi operations illustrated in the course
         ├── sample-input-data               # sample input data used in the templates
             ├── data.csv                    # data in csv format
