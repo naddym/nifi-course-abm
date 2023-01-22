@@ -33,7 +33,7 @@ Configuring `GenerateFlowFile` processor is simple. Just copy below data to `Cus
 
 | Name | Value |
 | ---- | ----- |
-| Queue URL | `https://sqs.us-east-1.amazonaws.com/274452765669/nifi-test-queue` |
+| Queue URL | `https://sqs.us-east-1.amazonaws.com/274145217656691/nifi-test-queue` |
 | Access Key ID | `provide the access key id` |
 | Secret Access Key | `provide the secret access key` |
 | Region | `US East (N. Virginia)` |

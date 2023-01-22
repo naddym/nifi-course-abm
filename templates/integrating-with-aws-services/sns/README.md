@@ -33,7 +33,7 @@ Configuring `GenerateFlowFile` processor is simple. Just copy below data to `Cus
 
 | Name | Value |
 | ---- | ----- |
-| Amazon Resource Name (ARN) | `arn:aws:sns:us-east-1:263423382682:nifi-test-topic` |
+| Amazon Resource Name (ARN) | `arn:aws:sns:us-east-1:274145217656691:nifi-test-topic` |
 | Region | `US East (N. Virginia)` |
 | Access Key ID | `provide the access key id` |
 | Secret Access Key | `provide the secret access key` |
