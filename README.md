@@ -11,6 +11,7 @@ A Repository to host nifi course material.
 
 ## A typical layout of this course
 
+    ├── adhocs                              # all custom requests asked during the course
     ├── extensions                          # guide for building custom functionality in nifi
     ├── installation                        # guide for installating nifi standalone/cluster for both secure/insecure mode
         ├── docker                          # demonstration of docker based installation
