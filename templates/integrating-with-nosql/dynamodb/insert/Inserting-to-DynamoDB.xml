@@ -1,21 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <template encoding-version="1.3">
     <description></description>
-    <groupId>df0140a1-0181-1000-9eae-a1116a1a928d</groupId>
+    <groupId>b8db9d6a-0185-1000-9668-0633bdf64ec7</groupId>
     <name>Inserting-to-DynamoDB</name>
     <snippet>
         <connections>
-            <id>0e0830f2-c1c8-36b4-0000-000000000000</id>
-            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <id>2005fbe3-a660-3785-0000-000000000000</id>
+            <parentGroupId>aa7f6b2e-8770-36cd-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>aa7f6b2e-8770-36cd-0000-000000000000</groupId>
+                <id>4a99b413-24fe-3fa8-0000-000000000000</id>
+                <type>FUNNEL</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>aa7f6b2e-8770-36cd-0000-000000000000</groupId>
+                <id>59fcb14d-f71a-3cec-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>355b33de-56d3-3e9a-0000-000000000000</id>
+            <parentGroupId>aa7f6b2e-8770-36cd-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <bends>
                 <x>416.0</x>
-                <y>432.0</y>
+                <y>400.0</y>
             </bends>
             <destination>
-                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
-                <id>1ef94e2f-cecd-3c12-0000-000000000000</id>
+                <groupId>aa7f6b2e-8770-36cd-0000-000000000000</groupId>
+                <id>4a99b413-24fe-3fa8-0000-000000000000</id>
                 <type>FUNNEL</type>
             </destination>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -27,21 +52,25 @@
             <name></name>
             <selectedRelationships>failure</selectedRelationships>
             <source>
-                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
-                <id>12ad36d2-7820-352f-0000-000000000000</id>
+                <groupId>aa7f6b2e-8770-36cd-0000-000000000000</groupId>
+                <id>59fcb14d-f71a-3cec-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
         </connections>
         <connections>
-            <id>59baff5c-b5fd-3b76-0000-000000000000</id>
-            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <id>37e23684-d9bd-368d-0000-000000000000</id>
+            <parentGroupId>aa7f6b2e-8770-36cd-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <bends>
+                <x>0.0</x>
+                <y>216.0</y>
+            </bends>
             <destination>
-                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
-                <id>1ef94e2f-cecd-3c12-0000-000000000000</id>
-                <type>FUNNEL</type>
+                <groupId>aa7f6b2e-8770-36cd-0000-000000000000</groupId>
+                <id>59fcb14d-f71a-3cec-0000-000000000000</id>
+                <type>PROCESSOR</type>
             </destination>
             <flowFileExpiration>0 sec</flowFileExpiration>
             <labelIndex>1</labelIndex>
@@ -52,53 +81,24 @@
             <name></name>
             <selectedRelationships>success</selectedRelationships>
             <source>
-                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
-                <id>12ad36d2-7820-352f-0000-000000000000</id>
+                <groupId>aa7f6b2e-8770-36cd-0000-000000000000</groupId>
+                <id>9d748739-81bd-3ad3-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
         </connections>
         <connections>
-            <id>848072c0-91f1-3431-0000-000000000000</id>
-            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
-            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-            <bends>
-                <x>0.0</x>
-                <y>248.0</y>
-            </bends>
-            <destination>
-                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
-                <id>12ad36d2-7820-352f-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </destination>
-            <flowFileExpiration>0 sec</flowFileExpiration>
-            <labelIndex>0</labelIndex>
-            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-            <name></name>
-            <selectedRelationships>success</selectedRelationships>
-            <source>
-                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
-                <id>009ef494-cc06-368e-0000-000000000000</id>
-                <type>PROCESSOR</type>
-            </source>
-            <zIndex>0</zIndex>
-        </connections>
-        <connections>
-            <id>aeb79ef9-d0b5-324a-0000-000000000000</id>
-            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <id>df8709a6-53b9-3e5a-0000-000000000000</id>
+            <parentGroupId>aa7f6b2e-8770-36cd-0000-000000000000</parentGroupId>
             <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
             <backPressureObjectThreshold>10000</backPressureObjectThreshold>
             <bends>
                 <x>632.0</x>
-                <y>480.0</y>
+                <y>448.0</y>
             </bends>
             <destination>
-                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
-                <id>1ef94e2f-cecd-3c12-0000-000000000000</id>
+                <groupId>aa7f6b2e-8770-36cd-0000-000000000000</groupId>
+                <id>4a99b413-24fe-3fa8-0000-000000000000</id>
                 <type>FUNNEL</type>
             </destination>
             <flowFileExpiration>0 sec</flowFileExpiration>
@@ -110,26 +110,26 @@
             <name></name>
             <selectedRelationships>unprocessed</selectedRelationships>
             <source>
-                <groupId>43eec5ab-69ae-3472-0000-000000000000</groupId>
-                <id>12ad36d2-7820-352f-0000-000000000000</id>
+                <groupId>aa7f6b2e-8770-36cd-0000-000000000000</groupId>
+                <id>59fcb14d-f71a-3cec-0000-000000000000</id>
                 <type>PROCESSOR</type>
             </source>
             <zIndex>0</zIndex>
         </connections>
         <funnels>
-            <id>1ef94e2f-cecd-3c12-0000-000000000000</id>
-            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <id>4a99b413-24fe-3fa8-0000-000000000000</id>
+            <parentGroupId>aa7f6b2e-8770-36cd-0000-000000000000</parentGroupId>
             <position>
                 <x>752.0</x>
-                <y>280.0</y>
+                <y>248.0</y>
             </position>
         </funnels>
         <labels>
-            <id>472685e4-fde9-3007-0000-000000000000</id>
-            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <id>c3291729-d64c-3fec-0000-000000000000</id>
+            <parentGroupId>aa7f6b2e-8770-36cd-0000-000000000000</parentGroupId>
             <position>
                 <x>208.0</x>
-                <y>32.0</y>
+                <y>0.0</y>
             </position>
             <height>48.0</height>
             <label>Insert Data into AWS DynamoDB</label>
@@ -145,169 +145,12 @@
             </style>
             <width>240.0</width>
         </labels>
-        <labels>
-            <id>e4f751e6-2713-36d9-0000-000000000000</id>
-            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
-            <position>
-                <x>1136.0</x>
-                <y>0.0</y>
-            </position>
-            <height>48.0</height>
-            <label>Get Data from AWS DynamoDB</label>
-            <style>
-                <entry>
-                    <key>background-color</key>
-                    <value>#debd38</value>
-                </entry>
-                <entry>
-                    <key>font-size</key>
-                    <value>16px</value>
-                </entry>
-            </style>
-            <width>240.0</width>
-        </labels>
         <processors>
-            <id>009ef494-cc06-368e-0000-000000000000</id>
-            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
+            <id>59fcb14d-f71a-3cec-0000-000000000000</id>
+            <parentGroupId>aa7f6b2e-8770-36cd-0000-000000000000</parentGroupId>
             <position>
                 <x>144.0</x>
-                <y>112.0</y>
-            </position>
-            <bundle>
-                <artifact>nifi-standard-nar</artifact>
-                <group>org.apache.nifi</group>
-                <version>1.15.3</version>
-            </bundle>
-            <config>
-                <bulletinLevel>WARN</bulletinLevel>
-                <comments></comments>
-                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-                <descriptors>
-                    <entry>
-                        <key>File Size</key>
-                        <value>
-                            <name>File Size</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Batch Size</key>
-                        <value>
-                            <name>Batch Size</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Data Format</key>
-                        <value>
-                            <name>Data Format</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>Unique FlowFiles</key>
-                        <value>
-                            <name>Unique FlowFiles</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>generate-ff-custom-text</key>
-                        <value>
-                            <name>generate-ff-custom-text</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>character-set</key>
-                        <value>
-                            <name>character-set</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>mime-type</key>
-                        <value>
-                            <name>mime-type</name>
-                        </value>
-                    </entry>
-                    <entry>
-                        <key>id</key>
-                        <value>
-                            <name>id</name>
-                        </value>
-                    </entry>
-                </descriptors>
-                <executionNode>ALL</executionNode>
-                <lossTolerant>false</lossTolerant>
-                <penaltyDuration>30 sec</penaltyDuration>
-                <properties>
-                    <entry>
-                        <key>File Size</key>
-                        <value>0B</value>
-                    </entry>
-                    <entry>
-                        <key>Batch Size</key>
-                        <value>1</value>
-                    </entry>
-                    <entry>
-                        <key>Data Format</key>
-                        <value>Text</value>
-                    </entry>
-                    <entry>
-                        <key>Unique FlowFiles</key>
-                        <value>false</value>
-                    </entry>
-                    <entry>
-                        <key>generate-ff-custom-text</key>
-                        <value>{
-  "id" : 6522,
-  "ident" : "00A",
-  "type" : "heliport",
-  "name" : "Total Rf Heliport",
-  "latitude_deg" : 40.0708,
-  "longitude_deg" : -74.93360137939453,
-  "elevation_ft" : 11,
-  "continent" : "NA",
-  "iso_country" : "US",
-  "iso_region" : "US-PA",
-  "municipality" : "Bensalem",
-  "scheduled_service" : "yes",
-  "gps_code" : "00A",
-  "iata_code" : null,
-  "local_code" : "00A",
-  "home_link" : null,
-  "wikipedia_link" : null,
-  "keywords" : null
-}</value>
-                    </entry>
-                    <entry>
-                        <key>character-set</key>
-                        <value>UTF-8</value>
-                    </entry>
-                    <entry>
-                        <key>mime-type</key>
-                    </entry>
-                    <entry>
-                        <key>id</key>
-                        <value>6522</value>
-                    </entry>
-                </properties>
-                <runDurationMillis>0</runDurationMillis>
-                <schedulingPeriod>0 sec</schedulingPeriod>
-                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-                <yieldDuration>1 sec</yieldDuration>
-            </config>
-            <executionNodeRestricted>false</executionNodeRestricted>
-            <name>GenerateFlowFile</name>
-            <relationships>
-                <autoTerminate>false</autoTerminate>
-                <name>success</name>
-            </relationships>
-            <state>STOPPED</state>
-            <style/>
-            <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
-        </processors>
-        <processors>
-            <id>12ad36d2-7820-352f-0000-000000000000</id>
-            <parentGroupId>43eec5ab-69ae-3472-0000-000000000000</parentGroupId>
-            <position>
-                <x>144.0</x>
-                <y>248.0</y>
+                <y>216.0</y>
             </position>
             <bundle>
                 <artifact>nifi-aws-nar</artifact>
@@ -560,6 +403,142 @@
             <style/>
             <type>org.apache.nifi.processors.aws.dynamodb.PutDynamoDB</type>
         </processors>
+        <processors>
+            <id>9d748739-81bd-3ad3-0000-000000000000</id>
+            <parentGroupId>aa7f6b2e-8770-36cd-0000-000000000000</parentGroupId>
+            <position>
+                <x>144.0</x>
+                <y>80.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.15.3</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>File Size</key>
+                        <value>
+                            <name>File Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>
+                            <name>Batch Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>
+                            <name>Data Format</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>
+                            <name>Unique FlowFiles</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                        <value>
+                            <name>generate-ff-custom-text</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>
+                            <name>character-set</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>mime-type</key>
+                        <value>
+                            <name>mime-type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>id</key>
+                        <value>
+                            <name>id</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>File Size</key>
+                        <value>0B</value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>1</value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>Text</value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                        <value>{
+  "id" : 6522,
+  "ident" : "00A",
+  "type" : "heliport",
+  "name" : "Total Rf Heliport",
+  "latitude_deg" : 40.0708,
+  "longitude_deg" : -74.93360137939453,
+  "elevation_ft" : 11,
+  "continent" : "NA",
+  "iso_country" : "US",
+  "iso_region" : "US-PA",
+  "municipality" : "Bensalem",
+  "scheduled_service" : "yes",
+  "gps_code" : "00A",
+  "iata_code" : null,
+  "local_code" : "00A",
+  "home_link" : null,
+  "wikipedia_link" : null,
+  "keywords" : null
+}</value>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>UTF-8</value>
+                    </entry>
+                    <entry>
+                        <key>mime-type</key>
+                    </entry>
+                    <entry>
+                        <key>id</key>
+                        <value>6522</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GenerateFlowFile</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+        </processors>
     </snippet>
-    <timestamp>10/03/2022 20:29:49 IST</timestamp>
+    <timestamp>01/22/2023 16:19:19 IST</timestamp>
 </template>
