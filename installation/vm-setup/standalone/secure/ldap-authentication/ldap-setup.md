@@ -45,7 +45,7 @@ docker cp user.ldif nifi-openldap:/user.ldif
 ### Adding users to ldap server
 
 ```shell
-docker exec nifi-openldap ldapadd -x -H ldap://localhost -D "cn=admin,dc=nifi" -w nifi -f /nadeem.ldif -ZZ
+docker exec nifi-openldap ldapadd -x -H ldap://localhost -D "cn=admin,dc=nifi" -w nifi -f /user.ldif -ZZ
 ```
 
 ### Verifying if users are added
