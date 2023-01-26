@@ -41,12 +41,22 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Tags({"concat", "append", "add"})
-@CapabilityDescription("Provide a description")
+@Tags({"concat", "text", "append"})
+@CapabilityDescription("Concatenates incoming flowfile content with the provided `concatenation value` property")
 @SeeAlso({})
-@ReadsAttributes({@ReadsAttribute(attribute="", description="")})
-@WritesAttributes({@WritesAttribute(attribute="", description="")})
+@ReadsAttributes({
+        @ReadsAttribute(attribute="concat.delimiter", description="Delimiter to be used while concatenating incoming " +
+                "flowfile with concatenation value property.")
+})
+@WritesAttributes({
+        @WritesAttribute(attribute="concatenated.string.length", description="Length of concatenated string " +
+                "written as attribute to the outgoing flowfile")
+}
+)
 public class ConcatText extends AbstractProcessor {
+
+    public static final String CONCAT_DELIMITER = "concat.delimiter";
+    public static final String CONCATENATED_STRING_LENGTH = "concatenated.string.length";
 
     public static final PropertyDescriptor CONCAT_PROPERTY = new PropertyDescriptor
             .Builder().name("CONCAT_PROPERTY")
@@ -123,13 +133,18 @@ public class ConcatText extends AbstractProcessor {
     @Override
     public void onTrigger(final ProcessContext context, final ProcessSession session) {
 
+        // getting flowfile from the input queue
         FlowFile flowFile = session.get();
         if ( flowFile == null ) {
             return;
         }
 
-        // getting CONCAT_PROPERTY property value
+        // getting CONCAT_PROPERTY (Concatenation Value) property value
         final String property = context.getProperty(CONCAT_PROPERTY).getValue();
+
+        // reading flowfile attribute `concat.delimiter`
+        String delimiter = flowFile.getAttribute(CONCAT_DELIMITER);
+        delimiter = delimiter == null ? "" : delimiter;
 
         final StringBuilder sb = new StringBuilder();
 
@@ -138,13 +153,17 @@ public class ConcatText extends AbstractProcessor {
 
         final String content = sb.toString();
 
-        // performing concat on incoming content
-        final String resultantString = content.concat(property);
+        // performing concatenation on incoming content
+        // incoming flowfile content + delimiter + property value
+        final String resultantString = content.concat(delimiter).concat(property);
 
         // writing the resultant string back to the flowfile
         flowFile = session.write(flowFile, out -> out.write(resultantString.getBytes(Charset.defaultCharset())));
 
-        // transferring flowfile to next processor
+        // add attribute `concatenation.string.length` to the flowfile
+        flowFile = session.putAttribute(flowFile, CONCATENATED_STRING_LENGTH, String.valueOf(resultantString.length()));
+
+        // transferring flowfile to next processor (success relationship)
         session.transfer(flowFile, SUCCESS);
     }
 }
