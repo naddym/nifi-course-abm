@@ -134,10 +134,24 @@ public class ConcatText extends AbstractProcessor {
     public void onTrigger(final ProcessContext context, final ProcessSession session) {
 
         // getting flowfile from the input queue
+        // if the flowfile is not available, simply return
+        // because, you don't want to apply any business logic
+        // because you need a flowfile
         FlowFile flowFile = session.get();
         if ( flowFile == null ) {
             return;
         }
+
+        // TODO implement
+        // This TODO says implement your business logic here.
+
+        // business logic
+
+        // 1. reading the flowfile content
+        // 2. concatenating the `From NiFi Course` to the incoming flowfile content
+        // 3. transferring flowfile to next processor
+
+        // 1. reading the incoming flowfile content
 
         // getting CONCAT_PROPERTY (Concatenation Value) property value
         final String property = context.getProperty(CONCAT_PROPERTY).getValue();
