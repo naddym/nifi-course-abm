@@ -6,6 +6,7 @@
      |_| \_|_|_| |_|  \____\___/ \__,_|_|  |___/\___|
 
 
+This comprehensive NiFi course has been meticulously crafted with a great deal of hard work and dedication. It is designed to provide an in-depth understanding of the platform and its capabilities. In addition to the theoretical concepts, the course also includes a variety of hands-on exercises and real-world examples to help you gain practical experience. I highly recommend following the course closely and taking the time to fully absorb the material. By doing so, you will be well-prepared to apply your new knowledge in a professional setting and become a proficient NiFi user.
 
 A Repository to host nifi course material.
 

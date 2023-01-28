@@ -4,7 +4,6 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.6.0
     container_name: elasticsearch
     restart: always
-    container_name: elasticsearch
     environment:
       node.name: elasticsearch
       discovery.type: single-node

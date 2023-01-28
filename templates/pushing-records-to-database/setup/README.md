@@ -1,6 +1,6 @@
 # Setting Up PostgreSQL docker on your machine
 
-In order to try `INSERT` and `UPSERT` operations enlisted above, you need to have database up and running. I have demonstrated the example by spinning up a docker image of postgresql. You can replicate that or install alternative way which ever feels the best. If you have chosen alternative way, please ignore below setup
+This guide will take you through the process of trying out the `INSERT` and `UPSERT` operations mentioned above. To do this, you'll need to have a database running. I've provided an example using a PostgreSQL database running in a Docker container, but you can use any setup that works for you. If you choose to use an alternative setup, simply disregard the instructions for setting up the Docker container.
 
 ## Prerequisites
 * Install [Docker](https://www.docker.com/)

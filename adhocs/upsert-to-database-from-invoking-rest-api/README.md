@@ -7,7 +7,7 @@ Download the template `Data-From-Rest-API-To-Database-Upsert.xml` and upload int
 
 ### Creating following table in database
 
-The above spring-boot application returns data in following table structure format. It is expected that below table schema should be created in the database
+The above spring-boot application returns data in following table structure format. It is imperative that the following table structure be established within the database for trying out the above template
 
 ```shell
 CREATE TABLE CUSTOMERS (
