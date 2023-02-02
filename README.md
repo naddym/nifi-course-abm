@@ -33,5 +33,6 @@ A Repository to host nifi course material.
         ...
         ...
         └── Updating-Record-Record_Path.xml # template which updates flowfile records using record path
+    ├── assignments                         # nifi course assignments for the participants to complete after the course
     ├── README.md
     └── best-practices-and-general-guidelines.md
